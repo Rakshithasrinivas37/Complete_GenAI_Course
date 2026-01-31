@@ -1,0 +1,1 @@
+https://github.com/EkleTony/GenAI-Course-Repo/blob/main/20_Langchain_Embedding/03_langchain.ipynb

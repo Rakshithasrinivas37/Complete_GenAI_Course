@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 16px;
+  background: #020617;
+  border-bottom: 1px solid #1e293b;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.header p {
+  margin: 4px 0 0;
+  color: #94a3b8;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+}
+
+.panel {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #1e293b;
+}
+
+.panel:last-child {
+  border-right: none;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.file-upload {
+  background: #1e293b;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.file-upload input {
+  display: none;
+}
+
+.toggle {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.generate-btn {
+  margin-left: auto;
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.generate-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.code-editor {
+  flex: 1;
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  color: #e5e7eb;
+  font-family: "JetBrains Mono", monospace;
+  padding: 12px;
+  border-radius: 8px;
+  resize: none;
+}
